@@ -1,0 +1,14 @@
+@import "compass";
+
+.sponsor-list {
+	width: 960px;
+	padding: 20px;
+	.sponsor-item {
+		&[data-width="1"] {
+			width: 25%;
+		}
+		&[data-width="2"] {
+			width: 50%;
+		}
+	}
+}

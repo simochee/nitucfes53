@@ -1,0 +1,16 @@
+[ng-include] {
+	height: 0;
+}
+
+.main-area {
+	margin-left: 245px;
+	.content-session {
+		&, &.normal {
+			max-width: 640px;
+		}
+		&.wide {
+			max-width: 1000px;
+		}
+		padding: 20px;
+	}
+}

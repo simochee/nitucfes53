@@ -1,0 +1,66 @@
+.global-header {
+	position: relative;
+	width: 100%;
+	height: 233px;
+	padding: 14px 0 10px;
+	background: url(/_files/img/bg_block.jpg);
+	box-shadow: 0 0 8px #000;
+	h1 {
+		overflow: hidden;
+		width: (640px / 3);
+		height: 0;
+		margin: 5px auto 0;
+		padding-top: (484px / 3);
+		background: url(/_files/img/logo.png);
+		background-size: 100% 100%;		
+	}
+	.global-nav {
+		position: relative;
+		width: 300px;
+		height: 50px;
+		margin: 13px auto 0;
+		.navigator-btn {
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			width: 280px;
+			height: 40px;
+			padding: 0 20px;
+			background: rgba(#000, 0.4);
+			box-shadow: inset 0 0 8px -2px #111,
+						inset 0 5px 5px -5px #000;
+			@include box-sizing(border-box);
+			color: #d9d9d9;
+			text-shadow: 0 0 2px rgba(#454545, 0.6),
+						 0 2px 1px rgba(#393939, 0.6),
+						 0 2px 4px rgba(#595959, 0.3);
+			pointer-events: none;
+			.btn-icon-left,
+			.btn-icon-right {
+				display: block;
+				height: 40px;
+				line-height: 40px;
+			}
+			.btn-icon-left {
+				float: left;
+				font-size: 20px;
+			}
+			.btn-icon-right {
+				float: right;
+				font-size: 18px;
+			}
+			.btn-text {
+				margin-left: 10px;
+				font-weight: bold;
+				line-height: 40px;
+				font-size: 18px;
+			}
+		}
+		select {
+			display: block;
+			width: 300px;
+			height: 50px;
+			opacity: 0;
+		}
+	}
+}

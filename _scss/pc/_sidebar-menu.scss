@@ -1,0 +1,49 @@
+// @import "sidebar-menu/*.png";
+$sidebar-menus: sprite-map("sidebar-menu/*.png");
+
+.sidebar-menu {
+	position: relative;
+	width: 100%;
+	.menu-item {
+		width: 250px;
+		margin: 0 auto;
+		.item-anchor {
+			display: block;
+			padding: 15px;
+			.text {
+				overflow: hidden;
+				display: block;
+				width: 200px;
+				height: 0;
+				padding-top: 46px;
+				&.top {
+					background: sprite($sidebar-menus, top);
+				}
+				&.greet {
+					background: sprite($sidebar-menus, greet);
+				}
+				&.fesguide {
+					padding-top: 82px;
+					background: sprite($sidebar-menus, fesguide);
+				}
+				&.timetable {
+					background: sprite($sidebar-menus, timetable);
+				}
+				&.blog {
+					background: sprite($sidebar-menus, blog);
+				}
+				&.sponsor {
+					background: sprite($sidebar-menus, sponsor);
+				}
+			}
+		}
+	}
+}
+
+/*
+ * Sidebar making order
+ * 1．ff:M+ 2c Ultra-Bold fz35 c#d9d9d9
+ * 2．DropShadow 0 0 2 #454545 60.0
+ * 3．(2.) -> DropShadow 0 2 1 #393939 60.0
+ * 4．(3.) -> DropShadow 0 2 4 #595959 30.0
+ */

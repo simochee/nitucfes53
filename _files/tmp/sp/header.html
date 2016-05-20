@@ -1,0 +1,13 @@
+<header class="global-header">
+	<h1>SPLASH 〜自分色に染めろ!!!〜 | 第53回宇部高専高専祭</h1>
+	<div class="global-nav">
+		<div class="navigator-btn">
+			<span class="fa fa-map-signs btn-icon-left"></span>
+			<span class="btn-text">ナビゲーター</span>
+			<span class="fa fa-caret-down btn-icon-right"></span>
+		</div>
+		<select onchange="location.href=value;">
+			<option value="" ng-repeat="item in menu" ng-value="item.link">{{item.title}}</option>
+		</select>
+	</div>
+</header>
