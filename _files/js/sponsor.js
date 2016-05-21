@@ -16,7 +16,7 @@ $(function() {
 					  + '</div></session>';
 			}
 		}
-		$('.main-area').html(html);
+		$('#sponsorList').html(html);
 		adsLayouter();
 	});
 

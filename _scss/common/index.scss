@@ -1,0 +1,12 @@
+.top-slider {
+	position: relative;
+	.slick-slide {
+		outline: 0;
+		a {
+			outline: 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}

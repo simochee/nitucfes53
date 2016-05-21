@@ -14,4 +14,28 @@ $(function() {
 		}
 		$('#updateHistory').html(html);
 	});
+
+	if( _ua.Tablet || _ua.Mobile ) {
+		$('#topSlider').slick({
+			slidesToShow: 1,
+			centerMode: false,
+			autoplay: true,
+			autoplaySpeed: 3500,
+			speed: 440,
+			draggable: true,
+			arrows: false,
+			dots: false
+		});
+	} else {
+		$('#topSlider').slick({
+			slidesToShow: 1,
+			centerMode: false,
+			autoplay: true,
+			autoplaySpeed: 3500,
+			speed: 440,
+			draggable: false,
+			arrows: false,
+			dots: false
+		});
+	}
 });

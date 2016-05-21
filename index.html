@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>第53回 宇部高専高専祭ホームページ</title>
 	<script src="https://use.fontawesome.com/36c6850373.js"></script>
+	<link rel="stylesheet" href="/_files/lib/slick.css">
 	<link rel="stylesheet" href="/_files/css/common.css">
 	<link rel="stylesheet" ng-href="/_files/css/common_{{ua}}.css">
+	<link rel="stylesheet" ng-href="/_files/css/common/index.css">
 	<link rel="stylesheet" ng-href="/_files/css/{{ua}}/index.css">
 </head>
 <body ng-class="site">
@@ -13,7 +15,8 @@
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
 		<main class="main-area">
-			<div class="top-slider">
+			<div class="top-slider" id="topSlider">
+				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
 				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
 			</div>
 			<session class="content-session">
@@ -29,6 +32,7 @@
 
 	<script src="/_files/lib/angular.min.js"></script>
 	<script src="/_files/lib/jquery.min.js"></script>
+	<script src="/_files/lib/slick.min.js"></script>
 	<script src="/_files/js/common.js"></script>
 	<script src="/_files/js/index.js"></script>
 
