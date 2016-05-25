@@ -1,0 +1,35 @@
+<div class="global-footer" id="footer">
+	<div class="footer-container">
+		<a href="#" class="jump-top jumpPageTop">
+			<span class="fa fa-arrow-circle-up icon"></span>
+			<span class="text">このページのトップへ</span>
+		</a>
+<!-- 		<ul class="share-btns">
+			<li><a href="#" class="share-btn-anchor twitter"><span class="fa fa-twitter icon"></span>Twitter</a></li>
+			<li><a href="#" class="share-btn-anchor facebook"><span class="fa fa-facebook icon"></span>Facebook</a></li>
+			<li><a href="#" class="share-btn-anchor googleplus"><span class="fa fa-google-plus icon"></span>Google+</a></li>
+			<li><a href="#" class="share-btn-anchor mail"><span class="fa fa-envelope icon"></span>Mail</a></li>
+		</ul> -->
+		<ul class="footer-nav">
+			<li class="menu-item" ng-repeat="item in menu">
+				<a href="" ng-href="{{item.link}}" class="item-anchor">{{item.title}}</a>
+			</li>
+		</ul>
+		<div class="change-mycolor">
+			<button class="change-btn myc-color" onclick="changeColor()">
+				<span class="fa fa-paint-brush"></span>
+			</button>
+			<div class="color-palette">
+				<div class="palette-container">
+					<ul class="color-palette-colors">
+						<li ng-repeat="color in userColors">
+							<input type="radio" value="{{color}}" name="changeMyColor" id="changeColorPalette{{$index}}">
+							<label for="changeColorPalette{{$index}}" class="color-{{$index}} color-btn">{{color}}</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<small class="copyright">&copy; 2016 第53回高専祭実行委員会</small>
+	</div>
+</div>

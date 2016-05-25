@@ -1,8 +1,12 @@
 @import "compass";
 @import "compass/reset";
 
+@import "fonts";
+
 body {
 	background: url(/_files/img/bg_ground.jpg);
+	font-family: "Mplus", sans_serif;
+	font-weight: normal;
 	&.scroll-off {
 		overflow: hidden;
 	}
@@ -14,6 +18,10 @@ img:not(.free-weidth) {
 
 @import "utilities";
 
+.myc-color {
+	@include transition(color .4s linear);
+}
+
 .body-container {
 	overflow: hidden;
 	width: 100%;
@@ -21,9 +29,10 @@ img:not(.free-weidth) {
 }
 
 .main-area {
+	z-index: 1;
 	.content-session {
 		display: block;
-		margin: 0 auto;
+		margin: 20px auto;
 		box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.5),
 					0 0 3px rgba(0,0,0,0.2);
 		border-radius: 2px;
@@ -41,4 +50,18 @@ img:not(.free-weidth) {
 			@include transition(color linear .1s);
 		}
 	}
+	& > svg {
+		z-index: -1;
+	}
 }
+
+.dialog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+@import "common/color-dialog"

@@ -2,6 +2,7 @@
 <html lang="ja" ng-app="myapp" ng-controller="AppCtrl">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>第53回 宇部高専高専祭ホームページ</title>
 	<script src="https://use.fontawesome.com/36c6850373.js"></script>
 	<link rel="stylesheet" href="/_files/lib/slick.css">
@@ -14,7 +15,7 @@
 
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
-		<main class="main-area">
+		<main class="main-area" id="mainArea">
 			<div class="top-slider" id="topSlider">
 				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
 				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
@@ -26,14 +27,16 @@
 		</main>
 	</div>
 
-	<div class="footer">
-		
-	</div>
+	<div ng-include="footerTmp"></div>
+
+	<div ng-include="colorDialog"></div>
 
 	<script src="/_files/lib/angular.min.js"></script>
 	<script src="/_files/lib/jquery.min.js"></script>
+	<script src="/_files/lib/jquery.cookie.js"></script>
 	<script src="/_files/lib/slick.min.js"></script>
 	<script src="/_files/js/common.js"></script>
+	<script src="/_files/js/pc/common.js"></script>
 	<script src="/_files/js/index.js"></script>
 
 </body>

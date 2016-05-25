@@ -1,0 +1,5 @@
+.color-dialog {
+	display: none;
+	background: #fff;
+	@include transition(background .3s ease, opacity .500s .5s ease);
+}

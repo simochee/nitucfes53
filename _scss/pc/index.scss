@@ -1,17 +1,12 @@
 .top-slider {
-	position: relative;
-	width: 1000px;
-	margin: 10px auto 50px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 10px auto;
 	box-shadow: 0 0 5px #000,
 				0 10px 10px -5px rgba(#000, 0.5);
-	.slick-slide {
-		outline: 0;
-		a {
-			outline: 0;
-		}
-		img {
-			width: 100%;
-		}
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
 

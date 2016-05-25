@@ -37,6 +37,35 @@ $sidebar-menus: sprite-map("sidebar-menu/*.png");
 				}
 			}
 		}
+		&:nth-last-child(1),
+		&:nth-last-child(2),
+		&:nth-last-child(3) {
+			float: left;
+			width: 68px;
+			.item-anchor {
+				display: block;
+				padding: 0 10px;
+				.text {
+					overflow: hidden;
+					display: block;
+					width: 48px;
+					height: 0;
+					padding-top: 48px;
+					&.members {
+						background: sprite($sidebar-menus, members);
+					}
+					&.access {
+						background: sprite($sidebar-menus, access);
+					}
+					&.contact {
+						background: sprite($sidebar-menus, contact);
+					}
+				}
+			}
+		}
+		&:nth-last-child(3) {
+			margin-left: 20.5px;
+		}
 	}
 }
 
