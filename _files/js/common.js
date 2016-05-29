@@ -24,6 +24,19 @@ var _site = (function(url) {
 })(location.href);
 var SPLASH;
 var _myColor;
+var loaderCircle;
+
+$(function() {
+	var h = 0;
+	var $ele = $('#loaderColorCircle');
+	loaderCircle = setInterval(function() {
+		$ele.css({
+			background: 'hsl(' + h + ',100%,50%)'
+		});
+		console.log(h);
+		h = h >= 360 ? 0 : h + 3;
+	}, 90);
+});
 
 app.controller('AppCtrl', function($scope) {
 	if(_ua.Mobile || _ua.Tablet) {
@@ -40,7 +53,8 @@ app.controller('AppCtrl', function($scope) {
 		{ title: "ご挨拶", class: "greet", link: pathTo + "/greet" },
 		{ title: "バザー・展示・バンド紹介", class: "fesguide", link: pathTo + "/fesguide" },
 		{ title: "タイムテーブル", class: "timetable", link: pathTo + "/timetable" },
-		{ title: "ブログ", class: "blog", link: "http://nitucfes53.blog.fc2.com/" },
+		// { title: "ブログ", class: "blog", link: "http://nitucfes53.blog.fc2.com/" },
+		{ title: "ブログ", class: "blog", link: pathTo + "/blog" },
 		{ title: "協賛", class: "sponsor", link: pathTo + "/sponsor" },
 		{ title: "役員紹介", class: "members", link: pathTo + "/members" },
 		{ title: "アクセス", class: "access", link: pathTo + "/access" },
@@ -68,7 +82,11 @@ app.controller('AppCtrl', function($scope) {
 			elemInit();
 			setupShareBtns();
 			addFooterHeight();
-		}, 100);
+
+			$('#loader').fadeOut(function() {
+				clearInterval(loaderCircle);
+			});
+		}, 500);
 	});
 
 	if(_ua.Tablet || _ua.Mobile) {
@@ -90,6 +108,10 @@ var util = {
 			d.resolve();
 		}, msec);
 		return d.promise();
+	},
+	random: function(max, min) {
+		var rand = Math.floor( Math.random() * (max + 1 - min) ) + min;
+		return rand;
 	}
 }
 
@@ -302,7 +324,7 @@ var addFooterHeight = function() {
 var sidebarHoverEffect = function() {
 	var len = $('#sidebarMenu .item-anchor').length;
 	$('#sidebar .item-anchor').hover(function() {
-		var splash = $(this).find('.active-splash');
+		var splash = $(this).find('.sidebar-splash');
 		var h = $(this).outerHeight();
 		var w = $(this).outerWidth();
 		splash.width(0).fadeIn(50);
@@ -315,7 +337,7 @@ var sidebarHoverEffect = function() {
 			left: w / 2
 		});
 	}, function() {
-		var splash = $(this).find('.active-splash');
+		var splash = $(this).find('.sidebar-splash');
 		splash.stop().fadeOut('fast', function() {
 			splash.css({
 				width: 0

@@ -28,14 +28,15 @@
 			letter-spacing: 5px;
 		}
 	}
-	.share-btns {
+	.share-btns, {
 		overflow: hidden;
-		width: 280px;
+		// width: 280px;
+		width: 60px;
 		height: 43px;
 		margin: 0 auto;
 		li {
-			float: left;
-			.share-btn-anchor {
+			// float: left;
+			.share-btn-anchor, {
 				position: relative;
 				overflow: hidden;
 				display: block;
@@ -225,7 +226,7 @@
 	}
 	.copyright {
 		display: block;
-		height: 10px auto 8px;
+		margin: 10px auto 8px;
 		opacity: 0.6;
 		font-size: 14px;
 		text-align: center;

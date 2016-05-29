@@ -2,6 +2,7 @@
 <html lang="ja" ng-app="myapp" ng-controller="AppCtrl">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>第53回 宇部高専高専祭ホームページ</title>
 	<script src="https://use.fontawesome.com/36c6850373.js"></script>
 	<link rel="stylesheet" href="/_files/css/common.css">
@@ -11,11 +12,20 @@
 </head>
 <body ng-class="site">
 
+	<div class="loader" id="loader">
+		<div class="color-circle" id="loaderColorCircle"><div class="inner"></div></div>
+	</div>
+
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
 		<main class="main-area" id="mainArea">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">{{breadcrumbRoot}}</a></li>
+				<li class="breadcrumb-item"><a href="./">協賛</a></li>
+			</ol>
+			<h2>スポンサー募集について</h2>
 			<session class="content-session sponsor-guide">
-				<h2>スポンサー料</h2>
+				<h3>スポンサー料</h3>
 				<p>スポンサー料は、3,000円・5,000円・10,000円・20,000円のいずれかで募集しております。</p>
 				<p>※表の記号は、以下の掲載広告のサイズを表します。</p>
 				<table class="table sponsor-info">
@@ -51,26 +61,43 @@
 				</table>
 			</session>
 			<session class="content-session sponsor-guide">
-				<h2>パンフレット掲載</h2>
+				<h3>パンフレット掲載</h3>
 				<p>パンフレット掲載広告は以下のサイズになります。パンフレットはB5サイズで発行予定です。</p>
+				<p>50音順（数字→英字→日本語読み）の区切りなしで掲載いたします。</p>
+				<p>※パンフレットはすべてモノクロでの掲載となります。デザインによっては文字や画像が潰れてしまう場合があります。</p>
 				<div class="images">
 					<img src="/sponsor/guide/magazine.png">
 				</div>
 			</session>
 			<session class="content-session wide sponsor-guide">
-				<h2>ウェブ掲載</h2>
+				<h3>ウェブ掲載</h3>
 				<p>ウェブ掲載広告は以下のサイズになります。モバイル表示では、パソコン表示の半分の領域で表示されます。</p>
+				<p>50音順（数字→英字→日本語読み）の頭文字区切りで掲載します。</p>
+				<p>※ウェブ広告では 「電子データをお送りいただいた場合のみ」 カラーでの掲載が可能です。<br>また、編集サービスをご利用の場合はモノクロでの掲載となります。</p>
 				<div class="images">
 					<img src="/sponsor/guide/pc.png" alt="">
 					<img src="/sponsor/guide/sp1.png" alt="">
 				</div>
 			</session>
+			<session class="content-session sponsor-guide">
+				<h3>広告デザインの作成・編集について</h3>
+				<p>簡単なもの（ロゴなどの追加、移動程度）であれば広告デザインの編集をオプションでご利用いただけます。</p>
+				<p>編集内容を明記の上、ご連絡ください。</p>
+				<p>また、テキストのみ掲載の場合は掲載内容をご連絡いただければ広告をご用意させていただきます。</p>
+				<p>なお、当方で作成・編集したデータはパンフレット・ウェブともにモノクロでの掲載になります。</p>
+			</session>
+			<session class="content-session sponsor-guide">
+				<h3>広告が掲載できない場合について</h3>
+				<p>誠に申し訳ありませんが、以下のいずれかに当てはまる場合は、広告を掲載をお断りさせていただく場合があります。</p>
+				<p>・お酒がメインで宣伝されている広告</p>
+				<p>・タバコがメインで宣伝されている広告</p>
+				<p>・年齢制限が設けられている広告</p>
+				<p>・学祭の広告としてふさわしくないもの</p>
+			</session>
 		</main>
 	</div>
 
-	<div class="footer">
-		
-	</div>
+	<div ng-include="footerTmp"></div>
 
 	<script src="/_files/lib/angular.min.js"></script>
 	<script src="/_files/lib/jquery.min.js"></script>

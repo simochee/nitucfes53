@@ -8,12 +8,15 @@
 	box-shadow: 0 0 8px #000;
 	.sidebar-area {
 		position: relative;
+		padding-bottom: 30px;
 		@import "sidebar-menu";
 	}
 	.sidebar-bland {
 		overflow: hidden;
-		width: 270px;
+		width: 245px;
 		height: 0;
-		padding-top: 205px;
+		padding-top: 230px;
+		background: url(/_files/img/logo.png) no-repeat center center;
+		background-size: 230px auto;
 	}
 }

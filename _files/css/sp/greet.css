@@ -1,1 +1,35 @@
-.greet-content .head-shot{float:left}.greet-content .head-shot img{width:120px;height:120px}.greet-content .personal{margin:40px 0 0 140px}.greet-content .personal .position{display:block;font-size:16px}.greet-content .personal .name{display:block;margin-left:12px;font-size:30px}.greet-content .text{clear:left;margin:8px 12px}.greet-content .text p{margin:0.75em 0;font-size:14px;text-indent:1em;line-height:1.75em}
+/* line 2, ../../../_scss/sp/greet.scss */
+.greet-content .head-shot {
+  float: left;
+}
+/* line 4, ../../../_scss/sp/greet.scss */
+.greet-content .head-shot img {
+  width: 120px;
+  height: 120px;
+}
+/* line 9, ../../../_scss/sp/greet.scss */
+.greet-content .personal {
+  margin: 40px 0 0 140px;
+}
+/* line 11, ../../../_scss/sp/greet.scss */
+.greet-content .personal .position {
+  display: block;
+  font-size: 16px;
+}
+/* line 15, ../../../_scss/sp/greet.scss */
+.greet-content .personal .name {
+  display: block;
+  margin-left: 12px;
+  font-size: 30px;
+}
+/* line 21, ../../../_scss/sp/greet.scss */
+.greet-content .text {
+  clear: left;
+  margin: 8px 12px;
+}
+/* line 24, ../../../_scss/sp/greet.scss */
+.greet-content .text p {
+  margin: 0.75em 0;
+  font-size: 14px;
+  line-height: 1.75em;
+}

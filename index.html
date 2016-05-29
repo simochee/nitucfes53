@@ -13,6 +13,10 @@
 </head>
 <body ng-class="site">
 
+	<div class="loader" id="loader">
+		<div class="color-circle" id="loaderColorCircle"><div class="inner"></div></div>
+	</div>
+
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp" class="header-frame"></div>
 		<main class="main-area" id="mainArea">
@@ -21,7 +25,7 @@
 				<div><a href="/sponsor"><img src="/_files/img/top-slider/slider2.jpg"></a></div>
 			</div>
 			<session class="content-session">
-				<h2>更新情報</h2>
+				<h3>更新情報</h3>
 				<button onclick="removeCookie()">remove</button>
 				<ul class="update-history" id="updateHistory"></ul>
 			</session>

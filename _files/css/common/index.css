@@ -1,1 +1,16 @@
-.top-slider{position:relative}.top-slider .slick-slide{outline:0}.top-slider .slick-slide a{outline:0}.top-slider .slick-slide img{width:100%}
+/* line 1, ../../../_scss/common/index.scss */
+.top-slider {
+  position: relative;
+}
+/* line 3, ../../../_scss/common/index.scss */
+.top-slider .slick-slide {
+  outline: 0;
+}
+/* line 5, ../../../_scss/common/index.scss */
+.top-slider .slick-slide a {
+  outline: 0;
+}
+/* line 8, ../../../_scss/common/index.scss */
+.top-slider .slick-slide img {
+  width: 100%;
+}

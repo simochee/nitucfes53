@@ -2,6 +2,7 @@
 <html lang="ja" ng-app="myapp" ng-controller="AppCtrl">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>第53回 宇部高専高専祭ホームページ</title>
 	<script src="https://use.fontawesome.com/36c6850373.js"></script>
 	<link rel="stylesheet" href="/_files/css/common.css">
@@ -10,14 +11,17 @@
 </head>
 <body ng-class="site">
 
+	<div class="loader" id="loader">
+		<div class="color-circle" id="loaderColorCircle"><div class="inner"></div></div>
+	</div>
+
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
 		<main class="main-area" id="mainArea">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="/">{{breadcrumbRoot}}</a></li>
-				<li class="breadcrumb-item"><a href="/">当日の予定</a></li>
 			</ol>
-			<h2>タイムスケジュール</h2>
+			<h2>ご挨拶</h2>
 			<session class="content-session greet-content">
 				<h3>学校長挨拶</h3>
 				<div class="head-shot">
@@ -35,7 +39,7 @@
 					<p>地域の皆様はじめ幅広い分野から多くの方々にご来場いただき、高専祭が宇部高専と皆様あるいは皆様同士の温かい交流の場となりますことを願っています。</p>
 				</div>
 			</session>
-			<div class="content-session greet-content">
+			<session class="content-session greet-content">
 				<h3>学生会長挨拶</h3>
 				<div class="head-shot">
 					<img src="" alt="">
@@ -49,11 +53,30 @@
 					<p>今年度の高専祭のテーマはSPLASHということで高専祭実行委員の皆様も弾けるような人ばかりとなってなっています！！私達学生からの期待はもちろんのこと、外部の方々にも期待を寄せられていると思います。「宇部高専の高専祭はすごい！！！」と言ってもらえるように各高専祭役員はやる気を出して準備にのぞんでいると思いますので、今年度の高専祭をより盛大に盛り上げて来年再来年と徐々に高専祭を盛り上げていっていただきたいです！！！</p>
 					<p>また、今回の役員の中には3年生も加わっており、より幅の広いアイデアを出してもらっております。是非、高専祭がうまく成功することを願っています！！！</p>
 				</div>
-			</div>
+			</session>
+			<session class="content-session greet-content">
+				<h3>実行委員長挨拶</h3>
+				<div class="head-shot">
+					<img src="" alt="">
+				</div>
+				<div class="personal">
+					<span class="position">高専祭実行委員長</span>
+					<span class="name">濱崎亮吾</span>
+				</div>
+				<div class="text">
+					<p>みなさんこんにちは！高専祭実行委員長の濱崎亮吾です！</p>
+					<p>今年の高専祭のテーマは「SPLASH〜自分色に染めろ!!〜」に決定しました。私達高専再実行委員は1つの思いをもってこのテーマを決めました。</p>
+					<p>今、私達高専生はコミュニケーション能力が不足していると言われています。それは、みんなが周りに合わせすぎていて本当の自分を出せずにいるからです。だから、今回の高専生を通して普段出せていないような自分色、つまり個性をみつけ、成長させて欲しいと思っています。</p>
+					<p>そこで私達高専再実行委員はみんなが自分色を思いっきり出せるような環境、企画を考えていきたいと思います。なので是非、企画に参加したり、露店の中心人物になったりして高専祭で個性をSPLASHさせて下さい。</p>
+					<p>みんなの青春の1ページはここにある！</p>
+				</div>
+			</session>
 		</main>
 	</div>
 
 	<div ng-include="footerTmp"></div>
+
+	<div ng-include="colorDialog"></div>
 
 	<script src="/_files/lib/angular.min.js"></script>
 	<script src="/_files/lib/jquery.min.js"></script>

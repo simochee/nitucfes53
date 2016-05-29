@@ -1,0 +1,124 @@
+.global-footer {
+	width: 100%;
+	padding-bottom: 20px;
+	box-shadow: inset 0px 150px 150px -150px rgba(#000, 0.8);
+	text-align: center;
+	.jump-top {
+		overflow: hidden;
+		display: block;
+		width: 315px;
+		margin: 0 auto;
+		padding: 8px 0;
+		color: rgba(#000, 0.4);
+		.icon,
+		.text {
+			float: left;
+			display: block;
+			line-height: 50px;
+		}
+		.icon {
+			width: 45px;
+			font-size: 40px;
+		}
+		.text {
+			width: 270px;
+			font-weight: bold;
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+	.social-btns {
+		overflow: hidden;
+		width: 60px;
+		height: 43px;
+		margin: 0 auto;
+		li {
+			float: left;
+			.social-btn-anchor {
+				position: relative;
+				overflow: hidden;
+				display: block;
+				width: 40px;
+				height: 0;
+				margin: 0 10px;
+				padding-top: 40px;
+				background: #d9d9d9;
+				border-radius: 12px;
+				box-shadow: 0 3px 0 #393939;
+				@include transition(background .1s linear);
+				.icon {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					color: #3b322d;
+					font-size: 16px;
+					@include transition(color .1s linear);
+				}
+				&:hover {
+					top: 3px;
+					box-shadow: none;
+					&.twitter {
+						background: #55acee;
+					}
+					.icon {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.footer-nav {
+		position: relative;
+		width: 200px;
+		height: 30px;
+		margin: 18px auto 5px;
+		.footer-nav-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 30px;
+			box-sizing: border-box;
+			border: 1px solid #eee;
+			background: rgba(#eee, 0.05);
+			color: #eee;
+			line-height: 28px;
+			font-size: 15px;
+			letter-spacing: 0.15em;
+			pointer-events: none;
+			&::after {
+				content: "\f107";
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #fff;
+				font-family: FontAwesome;
+			}
+		}
+		select {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 30px;
+			opacity: 0;
+		}
+	}
+	.copyright {
+		display: block;
+		margin: 20px auto 8px;
+		opacity: 0.6;
+		font-size: 14px;
+		text-align: center;
+		text-shadow: 0 2px 2px #555;
+		color: #fff;
+	}
+}

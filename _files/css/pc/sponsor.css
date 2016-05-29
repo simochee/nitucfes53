@@ -1,1 +1,74 @@
-@font-face{font-family:"Mplus";src:local("M+ 1p regular"),url(/_files/fonts/mplus/mplus-1p-regular.ttf),url(/_files/fonts/mplus/mplus-1p-regular.woff);font-weight:normal}@font-face{font-family:"Mplus";src:local("M+ 1p thin"),url(/_files/fonts/mplus/mplus-1p-thin.ttf),url(/_files/fonts/mplus/mplus-1p-thin.woff);font-weight:200}@font-face{font-family:"Mplus";src:local("M+ 1p black"),url(/_files/fonts/mplus/mplus-1p-black.ttf),url(/_files/fonts/mplus/mplus-1p-black.woff);font-weight:bold}.sponsor-list{width:960px;padding:20px}.sponsor-list .sponsor-item[data-width="1"]{width:25%}.sponsor-list .sponsor-item[data-width="2"]{width:50%}.sponsor-guide .sponsor-info{width:600px;margin:10px auto;border-top:1px solid  #555;border-left:1px solid  #555}.sponsor-guide .sponsor-info td,.sponsor-guide .sponsor-info th{border-right:1px solid  #555;border-bottom:1px solid  #555}.sponsor-guide .sponsor-info th{font-size:14px;padding:5px 8px;text-align:center}.sponsor-guide .sponsor-info td{padding:10px 30px;font-size:18px}.sponsor-guide .sponsor-info td:first-child{text-align:center}.sponsor-guide .sponsor-info td:nth-child(2){text-align:right}.sponsor-guide .sponsor-info tr:nth-child(odd) td{background:rgba(0,0,0,0.1)}.sponsor-guide .images{margin:40px 0 20px;text-align:center}.sponsor-guide .images img{margin:0 10px}
+@font-face {
+  font-family: "Mplus";
+  src: local("M+ 1p regular"), url(/_files/fonts/mplus/mplus-1p-regular.ttf), url(/_files/fonts/mplus/mplus-1p-regular.woff);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Mplus";
+  src: local("M+ 1p thin"), url(/_files/fonts/mplus/mplus-1p-thin.ttf), url(/_files/fonts/mplus/mplus-1p-thin.woff);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Mplus";
+  src: local("M+ 1p black"), url(/_files/fonts/mplus/mplus-1p-black.ttf), url(/_files/fonts/mplus/mplus-1p-black.woff);
+  font-weight: bold;
+}
+/* line 4, ../../../_scss/pc/sponsor.scss */
+.sponsor-list {
+  width: 960px;
+  padding: 20px;
+}
+/* line 8, ../../../_scss/pc/sponsor.scss */
+.sponsor-list .sponsor-item[data-width="1"] {
+  width: 25%;
+}
+/* line 11, ../../../_scss/pc/sponsor.scss */
+.sponsor-list .sponsor-item[data-width="2"] {
+  width: 50%;
+}
+
+/* line 18, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info {
+  width: 600px;
+  margin: 10px auto;
+  border-top: 1px solid  #555;
+  border-left: 1px solid  #555;
+}
+/* line 25, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info td,
+.sponsor-guide .sponsor-info th {
+  border-right: 1px solid  #555;
+  border-bottom: 1px solid  #555;
+}
+/* line 32, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info th {
+  font-size: 14px;
+  padding: 5px 8px;
+  text-align: center;
+}
+/* line 37, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info td {
+  padding: 10px 30px;
+  font-size: 18px;
+}
+/* line 40, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info td:first-child {
+  text-align: center;
+}
+/* line 43, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info td:nth-child(2) {
+  text-align: right;
+}
+/* line 49, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .sponsor-info tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 55, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .images {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+/* line 58, ../../../_scss/pc/sponsor.scss */
+.sponsor-guide .images img {
+  margin: 0 10px;
+}

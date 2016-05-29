@@ -46,16 +46,25 @@ $sidebar-menus: sprite-map("sidebar-menu/*.png");
 					background: sprite($sidebar-menus, contact);
 				}
 			}
-			.active-splash {
+			.sidebar-splash {
+				overflow: hidden;
 				position: absolute;
+				top: 50%;
+				left: 50%;
 				display: none;
 				width: 177px;
 				height: 75px;
 				margin: -37.5px -88.5px;
-				background: sprite($sidebar-menus, splash);
 				opacity: 1;
 				z-index: -1;
 				@include transition(width .1s linear);
+				.active-splash {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 177px;
+					height: 75px;
+				}
 			}
 		}
 		// &:nth-last-child(1),

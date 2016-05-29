@@ -1,1 +1,8 @@
-.sponsor-list .sponsor-item[data-width="1"]{width:50%}.sponsor-list .sponsor-item[data-width="2"]{width:100%}
+/* line 5, ../../../_scss/sp/sponsor.scss */
+.sponsor-list .sponsor-item[data-width="1"] {
+  width: 50%;
+}
+/* line 8, ../../../_scss/sp/sponsor.scss */
+.sponsor-list .sponsor-item[data-width="2"] {
+  width: 100%;
+}

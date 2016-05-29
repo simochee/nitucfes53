@@ -1,14 +1,11 @@
 {
-	"う": [
+	"こ": [
 		{
-			"name": "宇部高専 株式会社",
-			"kana": "うべこうせんかぶしきがいしゃ",
+			"name": "高専宇部 株式会社",
+			"kana": "こうせんうべかぶしきがいしゃ",
 			"img": "ube-k.inc.jpg",
 			"size": "24"
-		}
-
-	],
-	"こ": [
+		},
 		{
 			"name": "高専動物病院",
 			"kana": "こうせんどうぶつびょういん",
@@ -20,28 +17,26 @@
 			"kana": "こうせんすぽーつ",
 			"img": "kosen-sport.jpg",
 			"size": "12",
-			"link": "http://example.com/"
+			"link": "http://nitucfes53.web.fc2.com"
 		},
 		{
 			"name": "高専トレーニングジム",
 			"kana": "こうせんとれーにんぐじむ",
 			"img": "kosen-training.jpg",
-			"size": "11"
+			"size": "11",
+			"link": "mailto:sample@example.com"
 		},
 		{
 			"name": "コーセンビストロ",
 			"kana": "こーせんびすとろ",
 			"img": "kosen-bistro.jpg",
 			"size": "21"
-		}
-	],
-	"や": [
+		},
 		{
-			"name": "山口県厚狭自動車学校",
-			"kana": "やまぐちけんあさじどうしゃがっこう",
-			"img": "asa-jiko.jpg",
-			"size": "21",
-			"link": "http://www.asa-jiko.com/"
+			"name": "高専リフォーム",
+			"kana": "こうせんりふぉーむ",
+			"img": "kosen-reform.jpg",
+			"size": "22"
 		}
 	]
 }
