@@ -1,13 +1,9 @@
-.main-area {
-	padding-top: 0 !important;
-}
-
 .top-slider {
 	width: 100%;
-	margin: 0 0 15px;
+	margin: -35px 0 15px;
 	padding: 0 0 15px;
 	background: url(/_files/img/bg_block.jpg) center bottom;
-	box-shadow: 0 5px 5px #222;
+	box-shadow: 0 5px 5px rgba(#222, 0.7);
 	img {
 		width: 100%;
 	}

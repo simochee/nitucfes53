@@ -3,9 +3,9 @@
 		<h1>SPLASH 〜自分色に染めろ!!!〜 | 第53回宇部高専高専祭</h1>
 	</div>
 	<div class="sidebar-area">
-		<ul class="sidebar-menu">
+		<ul class="sidebar-menu" id="sidebarMenu">
 			<li class="menu-item" ng-repeat="item in menu">
-				<a href="" ng-href="{{item.link}}" class="item-anchor"><span class="text" ng-class="item.class">{{item.title}}</span></a>
+				<a href="" ng-href="{{item.link}}" class="item-anchor" data-index="{{$index}}"><span class="text" ng-class="item.class">{{item.title}}</span><div class="active-splash "></div></a>
 			</li>
 		</ul>
 	</div>

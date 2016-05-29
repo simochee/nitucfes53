@@ -1,0 +1,9 @@
+<div class="global-footer">
+	<div class="jump-top jumpPageTop"><span class="fa fa-arrow-circle-up"></span> このページのトップへ</div>
+	<select onchange="location.href=value;">
+		<option value="null">選択してください</option>
+		<optgroup label="サイトメニュー">
+			<option value="" ng-repeat="item in menu" ng-value="item.link">{{item.title}}</option>
+		</optgroup>
+	</select>
+</div>

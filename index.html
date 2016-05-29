@@ -14,14 +14,15 @@
 <body ng-class="site">
 
 	<div class="body-container" id="splashCanvas">
-		<div ng-include="navigationTmp"></div>
+		<div ng-include="navigationTmp" class="header-frame"></div>
 		<main class="main-area" id="mainArea">
-			<div class="top-slider" id="topSlider">
+			<div class="top-slider main-content" id="topSlider">
 				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
-				<div><img src="/_files/img/top-slider/slider1.jpg"></div>
+				<div><a href="/sponsor"><img src="/_files/img/top-slider/slider2.jpg"></a></div>
 			</div>
 			<session class="content-session">
 				<h2>更新情報</h2>
+				<button onclick="removeCookie()">remove</button>
 				<ul class="update-history" id="updateHistory"></ul>
 			</session>
 		</main>
@@ -36,7 +37,6 @@
 	<script src="/_files/lib/jquery.cookie.js"></script>
 	<script src="/_files/lib/slick.min.js"></script>
 	<script src="/_files/js/common.js"></script>
-	<script src="/_files/js/pc/common.js"></script>
 	<script src="/_files/js/index.js"></script>
 
 </body>

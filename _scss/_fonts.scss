@@ -1,15 +1,21 @@
 @font-face {
 	font-family: "Mplus";
-	src: url(/_files/fonts/mplus/mplus-1p-regular.ttf);
+	src: local("M+ 1p regular"),
+		 url(/_files/fonts/mplus/mplus-1p-regular.ttf),
+		 url(/_files/fonts/mplus/mplus-1p-regular.woff);
 	font-weight: normal;
 }
 @font-face {
 	font-family: "Mplus";
-	src: url(/_files/fonts/mplus/mplus-1p-thin.ttf);
+	src: local("M+ 1p thin"),
+		 url(/_files/fonts/mplus/mplus-1p-thin.ttf),
+		 url(/_files/fonts/mplus/mplus-1p-thin.woff);
 	font-weight: 200;
 }
 @font-face {
 	font-family: "Mplus";
-	src: url(/_files/fonts/mplus/mplus-1p-black.ttf);
+	src: local("M+ 1p black"),
+		 url(/_files/fonts/mplus/mplus-1p-black.ttf),
+		 url(/_files/fonts/mplus/mplus-1p-black.woff);
 	font-weight: bold;
 }

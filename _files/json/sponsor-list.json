@@ -1,2 +1,47 @@
 {
+	"う": [
+		{
+			"name": "宇部高専 株式会社",
+			"kana": "うべこうせんかぶしきがいしゃ",
+			"img": "ube-k.inc.jpg",
+			"size": "24"
+		}
+
+	],
+	"こ": [
+		{
+			"name": "高専動物病院",
+			"kana": "こうせんどうぶつびょういん",
+			"img": "kosen-dobutsu.jpg",
+			"size": "11"
+		},
+		{
+			"name": "高専スポーツ",
+			"kana": "こうせんすぽーつ",
+			"img": "kosen-sport.jpg",
+			"size": "12",
+			"link": "http://example.com/"
+		},
+		{
+			"name": "高専トレーニングジム",
+			"kana": "こうせんとれーにんぐじむ",
+			"img": "kosen-training.jpg",
+			"size": "11"
+		},
+		{
+			"name": "コーセンビストロ",
+			"kana": "こーせんびすとろ",
+			"img": "kosen-bistro.jpg",
+			"size": "21"
+		}
+	],
+	"や": [
+		{
+			"name": "山口県厚狭自動車学校",
+			"kana": "やまぐちけんあさじどうしゃがっこう",
+			"img": "asa-jiko.jpg",
+			"size": "21",
+			"link": "http://www.asa-jiko.com/"
+		}
+	]
 }

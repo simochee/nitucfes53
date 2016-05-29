@@ -145,7 +145,7 @@ $(function() {
 					part += '<div class="sponsor-item" data-width="' + w + '" data-height="' + h + '"'
 						  + 'data-posX="' + i + '" data-posY="' + c + '">'
 						  + ( hasLink ? '<a class="sponsor-link" href="' + data.link + '" target="_blank">' : '' )
-						  + '<img src="/_files/img/sponsor-list/' + data.img + '" alt="' + data.name + '様" title="' + data.name + '様">'
+						  + '<img src="/sponsor/ads/' + data.img + '" alt="' + data.name + '様" title="' + data.name + '様">'
 						  + ( hasLink ? '</a>' : '' )
 						  + '</div>';
 					for(var j=0; j<h; j++) {

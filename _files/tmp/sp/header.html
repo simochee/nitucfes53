@@ -7,7 +7,10 @@
 			<span class="fa fa-caret-down btn-icon-right"></span>
 		</div>
 		<select onchange="location.href=value;">
-			<option value="" ng-repeat="item in menu" ng-value="item.link">{{item.title}}</option>
+			<option value="null">選択してください</option>
+			<optgroup label="サイトメニュー">
+				<option value="" ng-repeat="item in menu" ng-value="item.link">{{item.title}}</option>
+			</optgroup>
 		</select>
 	</div>
 </header>

@@ -7,10 +7,15 @@
 }
 
 .main-area {
-	overflow: hidden;
-	position: relative;
 	margin-left: 245px;
-	z-index: 1;
+	.breadcrumb {
+		margin: 20px 25px 15px;
+		font-size: 18px;
+	}
+	h2 {
+		margin: 8px 25px 12px;
+		font-size: 80px;
+	}
 	.content-session {
 		&, &.normal {
 			max-width: 640px;

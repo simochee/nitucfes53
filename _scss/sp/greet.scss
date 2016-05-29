@@ -1,0 +1,31 @@
+.greet-content {
+	.head-shot {
+		float: left;
+		img {
+			width: 120px;
+			height: 120px;
+		}
+	}
+	.personal {
+		margin: 40px 0 0 140px;
+		.position {
+			display: block;
+			font-size: 16px;
+		}
+		.name {
+			display: block;
+			margin-left: 12px;
+			font-size: 30px;
+		}
+	}
+	.text {
+		clear: left;
+		margin: 8px 12px;
+		p {
+			margin: 0.75em 0;
+			font-size: 14px;
+			text-indent: 1em;
+			line-height: 1.75em;
+		}
+	}
+}

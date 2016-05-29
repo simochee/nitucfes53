@@ -15,12 +15,19 @@
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
 		<main class="main-area" id="mainArea">
-			<session class="content-session sponsor-guide">
-				<h2>高専祭の運営を応援していただけませんか？</h2>
-				<p>私たちは、高専祭を応援してくださるスポンサー様を募集しています。</p>
-				<a href="offer.html" class="read-more">くわしくみる</a>
+			<session class="content-session sponsor-guide-summary">
+				<h2>高専祭を応援していただけませんか？</h2>
+				<p>私たちは、高専祭に協賛していただけるスポンサー様を募集しています。</p>
+				<p>協賛していただいたスポンサー様には、内容に応じて下記のような？？特典？？をご用意しております。</p>
+				<ul>
+					<li>ウェブサイト・パンフレットへの広告の掲載</li>
+					<li>配布物の配布、パネルなどの広告媒体の会場への設置</li>
+					<li>ご提供物品を景品などとして出品</li>
+				</ul>
+				<p>企業・店舗・個人問わず募集中です！質問などはお問い合わせフォームよりお気軽にご質問ください。</p>
+				<a href="/sponsor/offer.html" class="btn">詳細</a>
 			</session>
-			<div id="sponsorList"></div>
+			<div id="sponsorList" class="sponsor-list-wrapper"></div>
 		</main>
 	</div>
 
@@ -32,7 +39,7 @@
 	<script src="/_files/lib/jquery.min.js"></script>
 	<script src="/_files/lib/jquery.cookie.js"></script>
 	<script src="/_files/js/common.js"></script>
-	<script src="/_files/js/pc/common.js"></script>
+	<!-- <script ng-src="/_files/js/{{ua}}/common.js"></script> -->
 	<script src="/_files/js/sponsor.js"></script>
 
 </body>

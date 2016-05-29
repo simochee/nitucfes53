@@ -1,4 +1,5 @@
 @import "compass";
+@import "../_fonts";
 
 .sponsor-list {
 	width: 960px;
@@ -9,6 +10,53 @@
 		}
 		&[data-width="2"] {
 			width: 50%;
+		}
+	}
+}
+
+.sponsor-guide {
+	.sponsor-info {
+		width: 600px;
+		margin: 10px auto;
+		border: {
+			top: 1px solid  #555;
+			left: 1px solid  #555;
+		}
+		td,
+		th {
+			border: {
+				right: 1px solid  #555;
+				bottom: 1px solid  #555;
+			}
+		}
+		th {
+			font-size: 14px;
+			padding: 5px 8px;
+			text-align: center;
+		}
+		td {
+			padding: 10px 30px;
+			font-size: 18px;
+			&:first-child {
+				text-align: center;
+			}
+			&:nth-child(2) {
+				text-align: right;
+			}
+		}
+		tr {
+			&:nth-child(odd) {
+				td {
+					background: rgba(#000, 0.1);
+				}
+			}
+		}
+	}
+	.images {
+		margin: 40px 0 20px;
+		text-align: center;
+		img {
+			margin: 0 10px;
 		}
 	}
 }

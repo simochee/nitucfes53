@@ -6,15 +6,64 @@
 	<script src="https://use.fontawesome.com/36c6850373.js"></script>
 	<link rel="stylesheet" href="/_files/css/common.css">
 	<link rel="stylesheet" ng-href="/_files/css/common_{{ua}}.css">
+	<link rel="stylesheet" ng-href="/_files/css/{{ua}}/sponsor.css">
+
 </head>
 <body ng-class="site">
 
 	<div class="body-container" id="splashCanvas">
 		<div ng-include="navigationTmp"></div>
-		<main class="main-area">
+		<main class="main-area" id="mainArea">
 			<session class="content-session sponsor-guide">
+				<h2>スポンサー料</h2>
+				<p>スポンサー料は、3,000円・5,000円・10,000円・20,000円のいずれかで募集しております。</p>
+				<p>※表の記号は、以下の掲載広告のサイズを表します。</p>
+				<table class="table sponsor-info">
+					<thead>
+						<tr>
+							<th>記号</th>
+							<th>金額</th>
+							<th>備考</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>A</td>
+							<td>20,000円</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>B</td>
+							<td>10,000円</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>C</td>
+							<td>5,000円</td>
+							<td>縦長・横長選択できます</td>
+						</tr>
+						<tr>
+							<td>D</td>
+							<td>3,000円</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</session>
+			<session class="content-session sponsor-guide">
+				<h2>パンフレット掲載</h2>
+				<p>パンフレット掲載広告は以下のサイズになります。パンフレットはB5サイズで発行予定です。</p>
+				<div class="images">
+					<img src="/sponsor/guide/magazine.png">
+				</div>
+			</session>
+			<session class="content-session wide sponsor-guide">
 				<h2>ウェブ掲載</h2>
-				<p>ウェブ掲載広告は以下のサイズになります。</p>
+				<p>ウェブ掲載広告は以下のサイズになります。モバイル表示では、パソコン表示の半分の領域で表示されます。</p>
+				<div class="images">
+					<img src="/sponsor/guide/pc.png" alt="">
+					<img src="/sponsor/guide/sp1.png" alt="">
+				</div>
 			</session>
 		</main>
 	</div>
@@ -25,6 +74,7 @@
 
 	<script src="/_files/lib/angular.min.js"></script>
 	<script src="/_files/lib/jquery.min.js"></script>
+	<script src="/_files/lib/jquery.cookie.js"></script>
 	<script src="/_files/js/common.js"></script>
 	<script src="/_files/js/sponsor.js"></script>
 

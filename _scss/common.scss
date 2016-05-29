@@ -13,7 +13,7 @@ body {
 }
 
 img:not(.free-weidth) {
-	min-width: 100%;
+	max-width: 100%;
 }
 
 @import "utilities";
@@ -29,7 +29,43 @@ img:not(.free-weidth) {
 }
 
 .main-area {
-	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	.breadcrumb {
+		position: relative;
+		z-index: 1;
+		font-size: 20px;
+		.breadcrumb-item {
+			margin-top: 10px;
+			&::after {
+				content: "\f105";
+				font-family: FontAwesome;
+				margin-left: 0.5em;
+				color: rgba(#000, 0.55);
+			}
+			a {
+				color: rgba(#000, 0.55);
+				text-decoration: none;
+				font-weight: normal;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	h2 {
+		position: relative;
+		@include inline-block;
+		z-index: 1;
+		font-weight: bold;
+		color: rgba(#000, 0.6);
+		line-height: 1.1em;
+	}
+	.content-session,
+	.main-content {
+		z-index: 2;
+		position: relative;
+	}
 	.content-session {
 		display: block;
 		margin: 20px auto;
@@ -37,8 +73,10 @@ img:not(.free-weidth) {
 					0 0 3px rgba(0,0,0,0.2);
 		border-radius: 2px;
 		color: #222;
+		font-size: 15px;
+		line-height: 1.5;
 		background: url(/_files/img/bg_paper.jpg);
-		h2 {
+		h3 {
 			margin-bottom: 10px;
 			font-size: 18px;
 			color: #444;
@@ -51,7 +89,7 @@ img:not(.free-weidth) {
 		}
 	}
 	& > svg {
-		z-index: -1;
+		z-index: 1;
 	}
 }
 

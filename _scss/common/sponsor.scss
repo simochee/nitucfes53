@@ -1,5 +1,57 @@
 @import "compass";
 
+.sponsor-guide-summary {
+	p {
+		margin: 8px 12px;
+		line-height: 1.2em;
+	}
+	ul {
+		margin: 5px 25px;
+		line-height: 1.6em;
+		li {
+			&::before {
+				content: "・";
+			}
+		}
+	}
+	.btn {
+		display: block;
+		width: 200px;
+		margin: 15px auto 0 !important;
+		padding: 12px 0;
+		border: 1px solid  #222;
+		text-decoration: none;
+		text-align: center;
+		color: #222;
+		@include transition(background .1s linear);
+		&:hover {
+			background: #222;
+			color: #eee;
+		}
+	}
+}
+
+.sponsor-list-wrapper {
+	h3 {
+		position: relative;
+		display: block;
+		width: 960px;
+		max-width: 95%;
+		margin: 0 auto;
+		font-size: 40px;
+		font-weight: bold;
+		text-shadow: 0 0 2px rgba(#454545, 0.6),
+					 0 2px 1px rgba(#393939, 0.6);
+		line-height: 60px;
+		color: #d9d9d9;
+		z-index: 10;
+	}
+	.content-session {
+		margin-top: 5px;
+		margin-bottom: 25px;
+	}
+}
+
 .sponsor-list {
 	.list-wrapper {
 		position: relative;

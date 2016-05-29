@@ -8,8 +8,9 @@ $sidebar-menus: sprite-map("sidebar-menu/*.png");
 		width: 250px;
 		margin: 0 auto;
 		.item-anchor {
+			position: relative;
 			display: block;
-			padding: 15px;
+			padding: 10px 15px;
 			.text {
 				overflow: hidden;
 				display: block;
@@ -35,37 +36,57 @@ $sidebar-menus: sprite-map("sidebar-menu/*.png");
 				&.sponsor {
 					background: sprite($sidebar-menus, sponsor);
 				}
-			}
-		}
-		&:nth-last-child(1),
-		&:nth-last-child(2),
-		&:nth-last-child(3) {
-			float: left;
-			width: 68px;
-			.item-anchor {
-				display: block;
-				padding: 0 10px;
-				.text {
-					overflow: hidden;
-					display: block;
-					width: 48px;
-					height: 0;
-					padding-top: 48px;
-					&.members {
-						background: sprite($sidebar-menus, members);
-					}
-					&.access {
-						background: sprite($sidebar-menus, access);
-					}
-					&.contact {
-						background: sprite($sidebar-menus, contact);
-					}
+				&.members {
+					background: sprite($sidebar-menus, members);
+				}
+				&.access {
+					background: sprite($sidebar-menus, access);
+				}
+				&.contact {
+					background: sprite($sidebar-menus, contact);
 				}
 			}
+			.active-splash {
+				position: absolute;
+				display: none;
+				width: 177px;
+				height: 75px;
+				margin: -37.5px -88.5px;
+				background: sprite($sidebar-menus, splash);
+				opacity: 1;
+				z-index: -1;
+				@include transition(width .1s linear);
+			}
 		}
-		&:nth-last-child(3) {
-			margin-left: 20.5px;
-		}
+		// &:nth-last-child(1),
+		// &:nth-last-child(2),
+		// &:nth-last-child(3) {
+		// 	float: left;
+		// 	width: 68px;
+		// 	.item-anchor {
+		// 		display: block;
+		// 		padding: 0 10px;
+		// 		.text {
+		// 			overflow: hidden;
+		// 			display: block;
+		// 			width: 48px;
+		// 			height: 0;
+		// 			padding-top: 48px;
+		// 			&.members {
+		// 				background: sprite($sidebar-menus, members);
+		// 			}
+		// 			&.access {
+		// 				background: sprite($sidebar-menus, access);
+		// 			}
+		// 			&.contact {
+		// 				background: sprite($sidebar-menus, contact);
+		// 			}
+		// 		}
+		// 	}
+		// }
+		// &:nth-last-child(3) {
+		// 	margin-left: 20.5px;
+		// }
 	}
 }
 

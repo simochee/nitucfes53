@@ -1,5 +1,6 @@
 .global-footer {
 	width: 100%;
+	padding-bottom: 20px;
 	box-shadow: inset 0px 150px 150px -150px rgba(#000, 0.8);
 	text-align: center;
 	.jump-top {
@@ -40,10 +41,10 @@
 				display: block;
 				width: 40px;
 				height: 0;
-				margin: 0 15px;
+				margin: 0 10px;
 				padding-top: 40px;
 				background: #d9d9d9;
-				border-radius: 100%;
+				border-radius: 12px;
 				box-shadow: 0 3px 0 #393939;
 				@include transition(background .1s linear);
 				.icon {
@@ -55,7 +56,17 @@
 					line-height: 40px;
 					text-align: center;
 					color: #3b322d;
+					font-size: 16px;
 					@include transition(color .1s linear);
+				}
+				.svg-icon {
+					position: absolute;
+					top: 12px;
+					left: 12px;
+					width: 16px;
+					height: 16px;
+					fill: #3b322d;
+					@include transition(fill .1s linear);
 				}
 				&:hover {
 					top: 3px;
@@ -72,8 +83,14 @@
 					&.mail {
 						background: #a4c439;
 					}
+					&.hatebu {
+						background: #008fde;
+					}
 					.icon {
 						color: #fff;
+					}
+					.svg-icon {
+						fill: #fff;
 					}
 				}
 			}
@@ -118,6 +135,9 @@
 			font-size: 60px;
 			line-height: 60px;
 			text-align: center;
+			.myc-svg {
+				@include transition(fill .2s ease);
+			}
 		}
 		.color-palette {
 			position: absolute;
@@ -202,5 +222,14 @@
 				}
 			}
 		}
+	}
+	.copyright {
+		display: block;
+		height: 10px auto 8px;
+		opacity: 0.6;
+		font-size: 14px;
+		text-align: center;
+		text-shadow: 0 2px 2px #555;
+		color: #fff;
 	}
 }
