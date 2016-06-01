@@ -10,3 +10,43 @@
 		}
 	}
 }
+
+.sponsor-guide {
+	.sponsor-info {
+		width: 100%;
+		margin: 0 auto;
+		border: {
+			top: 1px solid  #555;
+			left: 1px solid  #555;
+		}
+		td,
+		th {
+			border: {
+				right: 1px solid  #555;
+				bottom: 1px solid  #555;
+			}
+		}
+		th {
+			font-size: 12px;
+			padding: 5px 0;
+			text-align: center;
+		}
+		td {
+			padding: 8px 10px;
+			font-size: 15px;
+			&:first-child {
+				text-align: center;
+			}
+			&:nth-child(2) {
+				text-align: right;
+			}
+		}
+		tr {
+			&:nth-child(odd) {
+				td {
+					background: rgba(#000, 0.1);
+				}
+			}
+		}
+	}
+}

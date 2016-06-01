@@ -33,7 +33,6 @@ $(function() {
 		$ele.css({
 			background: 'hsl(' + h + ',100%,50%)'
 		});
-		console.log(h);
 		h = h >= 360 ? 0 : h + 3;
 	}, 90);
 });
@@ -49,16 +48,16 @@ app.controller('AppCtrl', function($scope) {
 	$scope.colorDialog = '/_files/tmp/color_dialog.html';
 	var pathTo = '';
 	var globalMenu = [
-		{ title: "トップ", class: "top", link: pathTo + "/" },
-		{ title: "ご挨拶", class: "greet", link: pathTo + "/greet" },
-		{ title: "バザー・展示・バンド紹介", class: "fesguide", link: pathTo + "/fesguide" },
-		{ title: "タイムテーブル", class: "timetable", link: pathTo + "/timetable" },
+		{ title: "トップ", class: "top", link: pathTo + "/", active: true },
+		{ title: "ご挨拶", class: "greet", link: pathTo + "/greet", active: true },
+		{ title: "バザー・展示・バンド紹介", class: "fesguide", link: pathTo + "/fesguide", active: false },
+		{ title: "タイムテーブル", class: "timetable", link: pathTo + "/timetable", active: false },
 		// { title: "ブログ", class: "blog", link: "http://nitucfes53.blog.fc2.com/" },
-		{ title: "ブログ", class: "blog", link: pathTo + "/blog" },
-		{ title: "協賛", class: "sponsor", link: pathTo + "/sponsor" },
-		{ title: "役員紹介", class: "members", link: pathTo + "/members" },
-		{ title: "アクセス", class: "access", link: pathTo + "/access" },
-		{ title: "お問い合わせ", class: "contact", link: pathTo + "/contact" }
+		{ title: "ブログ", class: "blog", link: pathTo + "/blog", active: false },
+		{ title: "協賛", class: "sponsor", link: pathTo + "/sponsor", active: true },
+		{ title: "役員紹介", class: "members", link: pathTo + "/members", active: false },
+		{ title: "アクセス", class: "access", link: pathTo + "/access", active: false },
+		{ title: "お問い合わせ", class: "contact", link: pathTo + "/contact", active: false }
 	];
 	$scope.menu = globalMenu;
 	$scope.ua = _ua.Mobile || _ua.Tablet ? 'sp' : 'pc';
@@ -199,7 +198,6 @@ var mycolorLang = function() {
 		var $active = $('[data-state="active"]');
 		var idx = $active.index();
 		if(idx < len - 2) {
-			console.log(idx)
 			$ele.eq(idx - 1).attr('data-state', 'hide');
 			$ele.eq(idx).attr('data-state', 'prev');
 			$ele.eq(idx + 1).attr('data-state', 'active');
@@ -271,7 +269,7 @@ var colorDialogBG = function(loop) {
 
 var myColorInit = function(color) {
 	_myColor = color;
-	$.cookie('mycolor', color, { expires: 7 });
+	$.cookie('mycolor', color, { expires: 7, path: '/' });
 	$('[name="changeMyColor"][value="' + color + '"]').prop('checked', true);
 }
 
@@ -279,31 +277,32 @@ var autoSplash = function(color) {
 	var count = 1;
 	var old_top;
 	myColorInit(color);
-	SPLASH = setInterval(function() {
-		if(Math.random() > 0.1) {
-			console.log('hapen')
-			var top = $(window).scrollTop();
-			var wH = $(window).height();
-			var wW = $(window).width();
-			var ele = 'splash-a' + count;
-			var $ele = makeSplash('.main-area', ele);
-			var w = _ua.Tablet || _ua.Mobile ? 150 : 300;
-			$ele.css({
-				position: 'absolute',
-				top: top + (Math.random() * wH) - w / 2,
-				left: Math.random() * wW - w / 2,
-				width: (Math.random() + 0.2) * w
-			});
-			$ele.find('path').css('fill', color);
-			if(count > 25) {
-				$('.splash-a' + (count-25)).fadeOut(1000, function() {
-					$(this).remove();
+	if( !$('body').hasClass('no-splash') ) {
+		SPLASH = setInterval(function() {
+			if(Math.random() > 0.1) {
+				var top = $(window).scrollTop();
+				var wH = $(window).height();
+				var wW = $(window).width();
+				var ele = 'splash-a' + count;
+				var $ele = makeSplash('.main-area', ele);
+				var w = _ua.Tablet || _ua.Mobile ? 150 : 300;
+				$ele.css({
+					position: 'absolute',
+					top: top + (Math.random() * wH) - w / 2,
+					left: Math.random() * wW - w / 2,
+					width: (Math.random() + 0.2) * w
 				});
+				$ele.find('path').css('fill', color);
+				if(count > 25) {
+					$('.splash-a' + (count-25)).fadeOut(1000, function() {
+						$(this).remove();
+					});
+				}
+				old_top = top;
+				count++;
 			}
-			old_top = top;
-			count++;
-		}
-	}, 300);
+		}, 300);
+	}
 }
 
 var mycolorChanger = function() {
@@ -364,7 +363,6 @@ var CommonPC = function() {
 	var prepareContentHeight = function() {
 		var conH = $('#mainArea').height();
 		var sdbH = $('#sidebar').height();
-		console.log(conH, sdbH)
 		if(conH < sdbH) {
 			$('#mainArea').height(sdbH);
 		} else {
@@ -374,5 +372,12 @@ var CommonPC = function() {
 }
 
 var commonSP = function() {
+	$('.change').click(function() {
+		$('.color-dialog').fadeIn();
+	});
+}
 
+function refreshMyColor() {
+	$.removeCookie('mycolor');
+	location.reload(false);
 }

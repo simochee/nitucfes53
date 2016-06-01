@@ -363,9 +363,43 @@
   opacity: 0;
 }
 /* line 115, ../../_scss/sp/_footer.scss */
+.global-footer .change-mycolor {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+}
+/* line 120, ../../_scss/sp/_footer.scss */
+.global-footer .change-mycolor .change-btn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+  border: 0;
+  outline: none;
+  background: none;
+  line-height: 60px;
+  text-align: center;
+}
+/* line 130, ../../_scss/sp/_footer.scss */
+.global-footer .change-mycolor .change-btn .myc-svg {
+  -moz-transition: fill 0.2s ease;
+  -o-transition: fill 0.2s ease;
+  -webkit-transition: fill 0.2s ease;
+  transition: fill 0.2s ease;
+}
+/* line 134, ../../_scss/sp/_footer.scss */
+.global-footer .change-mycolor .color-palette {
+  position: absolute;
+  left: 50%;
+  width: 240px;
+  margin: 0 -120px;
+  padding: 10px;
+}
+/* line 143, ../../_scss/sp/_footer.scss */
 .global-footer .copyright {
   display: block;
-  margin: 20px auto 8px;
+  margin: 25px auto 0;
   opacity: 0.6;
   font-size: 14px;
   text-align: center;

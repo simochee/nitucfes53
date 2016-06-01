@@ -112,9 +112,37 @@
 			opacity: 0;
 		}
 	}
+	.change-mycolor {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		margin: 15px auto;
+		.change-btn {
+			display: block;
+			width: 60px;
+			height: 60px;
+			margin: 15px auto;
+			border: 0;
+			outline: none;
+			background: none;
+			line-height: 60px;
+			text-align: center;
+			.myc-svg {
+				@include transition(fill .2s ease);
+			}
+		}
+		.color-palette {
+			position: absolute;
+			left: 50%;
+			width: 240px;
+			margin: 0 -120px;
+			padding: 10px;
+			
+		}
+	}
 	.copyright {
 		display: block;
-		margin: 20px auto 8px;
+		margin: 25px auto 0;
 		opacity: 0.6;
 		font-size: 14px;
 		text-align: center;

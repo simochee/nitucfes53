@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myapp" ng-controller="AppCtrl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>第53回 宇部高専高専祭ホームページ</title>
+	<script src="https://use.fontawesome.com/36c6850373.js"></script>
+	<link rel="stylesheet" href="/_files/lib/slick.css">
+	<link rel="stylesheet" href="/_files/css/common.css">
+	<link rel="stylesheet" ng-href="/_files/css/common_{{ua}}.css">
+	<link rel="stylesheet" ng-href="/_files/css/{{ua}}/404.css">
+</head>
+<body ng-class="site" class="no-splash">
+
+	<div class="loader" id="loader">
+		<div class="color-circle" id="loaderColorCircle"><div class="inner"></div></div>
+	</div>
+
+	<div class="body-container" id="splashCanvas">
+		<div ng-include="navigationTmp" class="header-frame"></div>
+		<main class="main-area" id="mainArea">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">{{breadcrumbRoot}}</a></li>
+			</ol>
+			<h2>ページが見つかりません</h2>
+			<div class="color-circle" id="colorCircle">
+				<p>404</p>
+			</div>
+			<p class="msg">このページは存在しないか、ただいま準備中です。<br><br>申し訳ありません。</p>
+		</main>
+	</div>
+
+	<div ng-include="footerTmp"></div>
+
+	<div ng-include="colorDialog"></div>
+
+	<script src="/_files/lib/angular.min.js"></script>
+	<script src="/_files/lib/jquery.min.js"></script>
+	<script src="/_files/lib/jquery.cookie.js"></script>
+	<script src="/_files/js/common.js"></script>
+	<script src="/_files/js/404.js"></script>
+
+</body>
+</html>

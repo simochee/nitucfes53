@@ -6,3 +6,40 @@
 .sponsor-list .sponsor-item[data-width="2"] {
   width: 100%;
 }
+
+/* line 15, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid  #555;
+  border-left: 1px solid  #555;
+}
+/* line 22, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info td,
+.sponsor-guide .sponsor-info th {
+  border-right: 1px solid  #555;
+  border-bottom: 1px solid  #555;
+}
+/* line 29, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info th {
+  font-size: 12px;
+  padding: 5px 0;
+  text-align: center;
+}
+/* line 34, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info td {
+  padding: 8px 10px;
+  font-size: 15px;
+}
+/* line 37, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info td:first-child {
+  text-align: center;
+}
+/* line 40, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info td:nth-child(2) {
+  text-align: right;
+}
+/* line 46, ../../../_scss/sp/sponsor.scss */
+.sponsor-guide .sponsor-info tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.1);
+}

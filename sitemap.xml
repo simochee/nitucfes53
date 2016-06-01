@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://nitucfes53.web.fc2.com</loc>
+		<lastmod>2016-06-01</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://nitucfes53.web.fc2.com/greet</loc>
+		<lastmod>2016-06-01</lastmod>
+		<changeferq>monthly</changeferq>
+		<periority>0.5</periority>
+	</url>
+	<url>
+		<loc>http://nitucfes53.web.fc2.com/sponsor</loc>
+		<lastmod>2016-06-01</lastmod>
+		<changefreq>weekly</changefreq>
+		<periority>0.5</periority>
+	</url>
+	<url>
+		<loc>http://nitucfes53.web.fc2.com/sponsor/offer.html</loc>
+		<lastmod>2016-06-01</lastmod>
+		<changefreq>never</changefreq>
+		<periority>0.3</periority>
+	</url>
+</urlset>

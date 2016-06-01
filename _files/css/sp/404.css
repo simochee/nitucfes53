@@ -1,0 +1,19 @@
+/* line 1, ../../../_scss/sp/404.scss */
+.color-circle {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 250px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+/* line 13, ../../../_scss/sp/404.scss */
+.msg {
+  font-size: 18px;
+  text-align: center;
+  colro: #333;
+}

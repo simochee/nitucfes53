@@ -9,7 +9,7 @@
 		<select onchange="location.href=value;">
 			<option value="null">選択してください</option>
 			<optgroup label="サイトメニュー">
-				<option value="" ng-repeat="item in menu" ng-value="item.link">{{item.title}}</option>
+				<option value="" ng-repeat="item in menu" ng-value="item.link" ng-disabled="!item.active">{{item.title}}</option>
 			</optgroup>
 		</select>
 	</div>
