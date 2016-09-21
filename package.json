@@ -1,0 +1,27 @@
+{
+  "name": "nitucfes53.clone1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"live-server\" \"compass watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simochee/nitucfes53.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simochee/nitucfes53/issues"
+  },
+  "homepage": "https://github.com/simochee/nitucfes53#readme"
+}

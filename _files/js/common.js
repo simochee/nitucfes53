@@ -1,7 +1,7 @@
 var app = angular.module('myapp', []);
 var _ua = (function(u){
 	return {
-		Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1 && u.indexOf("tablet pc") == -1) 
+		Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1 && u.indexOf("tablet pc") == -1)
 		|| u.indexOf("ipad") != -1
 		|| (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
 		|| (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
@@ -53,11 +53,12 @@ app.controller('AppCtrl', function($scope) {
 		{ title: "バザー・展示・バンド紹介", class: "fesguide", link: pathTo + "/fesguide", active: false },
 		{ title: "タイムテーブル", class: "timetable", link: pathTo + "/timetable", active: false },
 		// { title: "ブログ", class: "blog", link: "http://nitucfes53.blog.fc2.com/" },
-		{ title: "ブログ", class: "blog", link: pathTo + "/blog", active: false },
+		// { title: "ブログ", class: "blog", link: pathTo + "/blog", active: false },
+		// { title: "Facebook", class: "facebook", link: "https://www.facebook.com/nitucfes53/", active: true },
 		{ title: "協賛", class: "sponsor", link: pathTo + "/sponsor", active: true },
 		{ title: "役員紹介", class: "members", link: pathTo + "/members", active: false },
-		{ title: "アクセス", class: "access", link: pathTo + "/access", active: false },
-		{ title: "お問い合わせ", class: "contact", link: pathTo + "/contact", active: false }
+		{ title: "アクセス", class: "access", link: pathTo + "/access", active: true },
+		{ title: "お問い合わせ", class: "contact", link: pathTo + "/contact", active: true }
 	];
 	$scope.menu = globalMenu;
 	$scope.ua = _ua.Mobile || _ua.Tablet ? 'sp' : 'pc';

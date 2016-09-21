@@ -1,0 +1,56 @@
+/* line 2, ../../../_scss/sp/access.scss */
+.access .map-canvas {
+  width: 100%;
+  height: 300px;
+}
+/* line 6, ../../../_scss/sp/access.scss */
+.access .public-transport {
+  overflow: hidden;
+}
+/* line 9, ../../../_scss/sp/access.scss */
+.access .public-transport .row:not(:first-child) {
+  margin-top: 40px;
+}
+/* line 13, ../../../_scss/sp/access.scss */
+.access .public-transport .icon {
+  width: 150px;
+  height: 30px;
+  margin: 8px auto 3px;
+  background: #333;
+  border-radius: 8px;
+  color: #ccc;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+/* line 25, ../../../_scss/sp/access.scss */
+.access .public-transport .content h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 31, ../../../_scss/sp/access.scss */
+.access .public-transport .content dl dt {
+  font-size: 14px;
+  color: #000;
+}
+/* line 34, ../../../_scss/sp/access.scss */
+.access .public-transport .content dl dt:not(:first-child) {
+  margin-top: 6px;
+}
+/* line 38, ../../../_scss/sp/access.scss */
+.access .public-transport .content dl dd {
+  margin: 0 4px;
+  font-size: 13px;
+  color: #252521;
+}
+/* line 43, ../../../_scss/sp/access.scss */
+.access .public-transport .content dl .cap-large {
+  margin-left: 0.1em;
+  font-size: 120%;
+  letter-spacing: 0.1em;
+}
+/* line 48, ../../../_scss/sp/access.scss */
+.access .public-transport .content dl .cap-small {
+  font-size: 85%;
+}

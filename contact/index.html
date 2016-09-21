@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ja" ng-app="myapp" ng-controller="AppCtrl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>お問い合わせ｜第53回 宇部高専高専祭ホームページ</title>
+  <meta name="title" content="ご挨拶｜第53回 宇部高専高専祭ホームページ">
+  <meta name="description" content="2016年は11月12、13日（土・日）開催！ご質問などはこちらから！">
+  <meta name="keywords" content="学園祭,文化祭,宇部,イベント">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ご挨拶｜第53回 宇部高専高専祭ホームページ">
+  <meta property="og:description" content="2016年は11月12、13日（土・日）開催！高専祭についてのご質問はこちらから！">
+  <meta property="og:url" content="http://nitucfes53.web.fc2.com">
+  <meta property="og:site_name" contet="第53回 宇部高専高専祭">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" cotnent="@nitucfes53">
+  <script src="https://use.fontawesome.com/36c6850373.js"></script>
+  <link rel="stylesheet" href="/_files/css/common.css">
+  <link rel="stylesheet" ng-href="/_files/css/common_{{ua}}.css">
+  <link rel="stylesheet" ng-href="/_files/css/common/contact.css">
+</head>
+<body ng-class="site">
+
+  <div class="loader" id="loader">
+    <div class="color-circle" id="loaderColorCircle"><div class="inner"></div></div>
+  </div>
+
+  <div class="body-container" id="splashCanvas">
+    <div ng-include="navigationTmp"></div>
+    <main class="main-area access" id="mainArea">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">{{breadcrumbRoot}}</a></li>
+      </ol>
+      <h2>お問い合わせ</h2>
+
+      <section class="content-session contact">
+        <form action="http://form1.fc2.com/form/?id=dc57c0ca8e590321" method="post">
+          <div class="input-group">
+            <label class="label" for="name">お名前</label>
+            <input type="text" class="text-input" id="name" name="name" placeholder="お名前［必須項目］" required>
+          </div>
+          <div class="input-group">
+            <label class="label" for="mail">メールアドレス</label>
+            <input type="text" class="text-input" id="mail" name="mail" placeholder="Eメールアドレス">
+          </div>
+          <div class="input-group">
+            <label for="text1" class="label">本文［必須項目］</label>
+            <textarea name="text1" id="text1" rows="5" class="textarea" required></textarea>
+          </div>
+          <button type="submit" class="submit">確認</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div ng-include="footerTmp"></div>
+
+  <div ng-include="colorDialog"></div>
+
+  <script src="/_files/lib/angular.min.js"></script>
+  <script src="/_files/lib/jquery.min.js"></script>
+  <script src="/_files/lib/jquery.cookie.js"></script>
+  <script src="/_files/js/common.js"></script>
+
+</body>
+</html>

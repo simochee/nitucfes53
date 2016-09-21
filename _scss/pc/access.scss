@@ -1,0 +1,56 @@
+.access {
+  .map-canvas {
+    width: 100%;
+    height: 500px;
+  }
+  .public-transport {
+    .row {
+      clear: both;
+    }
+    .icon {
+      float: left;
+      width: 80px;
+      height: 80px;
+      margin: 0 10px;
+      background: #333;
+      border-radius: 20%;
+      color: #ccc;
+      line-height: 80px;
+      text-align: center;
+      font-size: 30px;
+    }
+    .content {
+      margin-left: 100px;
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+      h4 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      dl {
+        margin-left: 15px;
+        dt {
+          font-size: 15px;
+          color: #000;
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+        }
+        dd {
+          margin-left: 8px;
+          font-size: 13px;
+          color: #252521;
+        }
+      }
+      .cap-large {
+        margin-left: 0.1em;
+        font-size: 120%;
+        letter-spacing: 0.1em;
+      }
+      .cap-small {
+        font-size: 85%;
+      }
+    }
+  }
+}

@@ -193,9 +193,13 @@
 /* line 31, ../../_scss/pc/_footer.scss */
 .global-footer .share-btns {
   overflow: hidden;
-  width: 60px;
+  width: 120px;
   height: 43px;
   margin: 0 auto;
+}
+/* line 37, ../../_scss/pc/_footer.scss */
+.global-footer .share-btns li {
+  float: left;
 }
 /* line 39, ../../_scss/pc/_footer.scss */
 .global-footer .share-btns li .share-btn-anchor {

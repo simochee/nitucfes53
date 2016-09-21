@@ -1,9 +1,28 @@
 [
 	{
+		"date": "2016-08-03",
+		"content": [
+			"<a href='/access/'>アクセス を公開</a>",
+			"<a href='/contact/'>お問い合わせ を公開</a>"
+		]
+	},
+	{
+		"date": "2016-08-01",
+		"content": [
+			"<a href='https://www.facebook.com/nitucfes53/' target='_blank'>Facebookページ を公開</a>"
+		]
+	},
+	{
+		"date": "2016-06-23",
+		"content": [
+			"<a href='/greet#cs'>学生会長挨拶 を公開</a>"
+		]
+	},
+	{
 		"date": "2016-06-01",
 		"content": [
 			"スマートフォン向け表示に対応しました！",
-			"<a href='/greet'>ご挨拶 のページを公開</a>",
+			"<a href='/greet#ic'>実行委員長挨拶 を公開</a>",
 			"<a href='/sponsor'>協賛 のページを公開</a>"
 		]
 	},

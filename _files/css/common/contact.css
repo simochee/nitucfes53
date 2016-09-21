@@ -1,0 +1,47 @@
+/* line 2, ../../../_scss/common/contact.scss */
+.contact .input-group {
+  margin-top: 10px;
+}
+/* line 5, ../../../_scss/common/contact.scss */
+.contact .label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+/* line 10, ../../../_scss/common/contact.scss */
+.contact .text-input,
+.contact .textarea {
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border: 1px solid  #aaa;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 22, ../../../_scss/common/contact.scss */
+.contact .submit {
+  display: block;
+  position: relative;
+  width: 94%;
+  height: 40px;
+  margin: 20px 3% 10px;
+  line-height: 40px;
+  border-radius: 8px;
+  border: 1px solid #9aa4b3;
+  background: #bdd1ef;
+  box-shadow: 0 2px 0 #929cab;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-indent: 3px;
+  color: #677180;
+  cursor: pointer;
+}
+/* line 39, ../../../_scss/common/contact.scss */
+.contact .submit:active {
+  top: 2px;
+  box-shadow: 0 0 2px #aaa;
+}
